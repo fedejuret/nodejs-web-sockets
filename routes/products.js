@@ -3,7 +3,7 @@ const { Router } = require('express');
 const app = Router();
 const { io } = require('../index');
 
-app.post('/api/v1/content/:id', async (req, res) => {
+app.delete('/api/v1/content/:id', async (req, res) => {
 
     const { id } = req.params;
 
